@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Shorts Analyzer</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 16px;
+      margin: 10px 0;
+      color: #333;
+    }
+    .title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .description {
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .comments {
+      margin-top: 10px;
+    }
+    .comment {
+      padding: 5px;
+      border-bottom: 1px solid #eee;
+    }
+    .transcript {
+      margin-top: 10px;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    .transcript-item {
+      padding: 5px;
+      border-bottom: 1px solid #eee;
+    }
+    .screenshots-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .screenshot-item {
+      position: relative;
+      width: 100%;
+    }
+    .screenshot-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .screenshot-timestamp {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+    .content-analysis {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    .content-analysis.safe {
+      background-color: #e6ffe6;
+      border: 1px solid #00cc00;
+    }
+    .content-analysis.caution {
+      background-color: #fff3e6;
+      border: 1px solid #ff9900;
+    }
+    .content-analysis.unsafe {
+      background-color: #ffe6e6;
+      border: 1px solid #ff0000;
+    }
+    .content-analysis.error {
+      background-color: #f2f2f2;
+      border: 1px solid #999;
+    }
+    .safety-rating {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .analysis-explanation {
+      font-size: 14px;
+      color: #333;
+    }
+    .last-updated {
+      font-size: 12px;
+      color: #666;
+      margin-top: 10px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <h1>YouTube Shorts Analyzer</h1>
+    <div id="videoInfo">
+      <div id="title"></div>
+      <div id="description"></div>
+    </div>
+    <div id="contentAnalysis" class="content-analysis">
+      <div class="safety-rating"></div>
+      <div class="analysis-explanation"></div>
+    </div>
+    <h2>Comments</h2>
+    <div id="comments" class="comments"></div>
+    <h2>Transcript</h2>
+    <div id="transcript" class="transcript"></div>
+    <h2>Screenshots</h2>
+    <div id="screenshotsContainer" class="screenshots-grid"></div>
+    <div id="lastUpdated" class="last-updated"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
