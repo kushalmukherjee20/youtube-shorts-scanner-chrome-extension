@@ -1,10 +1,10 @@
-# YouTube Shorts Safety Scanner Chrome Extension
+# YouTube Shorts Safety Scanner For Children Chrome Extension
 
-A Chrome extension that helps users analyze YouTube Shorts videos for potential safety concerns by scanning comments and video content.
+A Chrome extension that helps users analyze YouTube Shorts videos for potential safety concerns for children by scanning the video content.
 
 ## Features
 
-- Scans YouTube Shorts videos for potentially harmful content
+- Scans YouTube Shorts videos for potentially harmful content for children
 - Provides safety ratings and warnings
 - User-friendly interface integrated into YouTube
 - Real-time email alerts for potentially unsafe content
