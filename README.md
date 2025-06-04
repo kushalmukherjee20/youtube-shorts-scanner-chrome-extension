@@ -5,7 +5,6 @@ A Chrome extension that helps users analyze YouTube Shorts videos for potential 
 ## Features
 
 - Scans YouTube Shorts videos for potentially harmful content
-- Analyzes video comments using AI
 - Provides safety ratings and warnings
 - User-friendly interface integrated into YouTube
 
